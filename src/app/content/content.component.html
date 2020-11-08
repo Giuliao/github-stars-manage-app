@@ -1,0 +1,20 @@
+
+<section>
+    <mat-card *ngFor="let item of dataList" class="card-box">
+        <mat-card-header>{{item.title}}</mat-card-header>
+        <div class="tag-box">
+            <mat-chip-list
+                cdkDropList
+                cdkDropListOrientation="horizontal"
+                (cdkDropListDropped)="drop($event, item)">
+                <mat-chip cdkDrag *ngFor="let tag of item.tags">
+                    {{tag}}        
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+        <mat-card-content><p>{{item.description}}</p></mat-card-content>    
+        <mat-card-ations class="action-box">
+            <button mat-raised-button (click)="onUnstar()">Unstar</button>
+        </mat-card-ations>
+    </mat-card>
+</section>
