@@ -5,13 +5,15 @@ import { HttpClientModule }    from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContentComponent } from './content/content.component';
-import { SharedModule } from './shared/shared.module'
+import { ContentComponent } from './pages/content/content.component';
+import { SharedModule } from './shared/shared.module';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentComponent
+    ContentComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
