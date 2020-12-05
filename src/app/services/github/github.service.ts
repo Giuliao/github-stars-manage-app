@@ -1,48 +1,39 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
-import { catchError, tap } from "rxjs/operators"
+import { catchError, tap, map } from "rxjs/operators"
 
-import { StarrdData } from '../../lib/github/starred'
+import { StarrdData, User } from "@lib/github/starred"
+import { StarHttpService } from "@utils/star-http.service"
 
 @Injectable({
   providedIn: 'root'
 })
 export class GithubService {
 
-  private urlPrefix = "api/v1/github";
+  private githubUrlPrefix = "api/v1/github";
+  private urlPrefix = "api/v1/auth"
 
+  constructor(private http: StarHttpService) { }
 
-  constructor(private http: HttpClient) { }
-
-  private handleError<T>(result?: T) {
-    return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
-
-      // Let the app keep running by returning an empty result.
-      return of(result as T);
-    };
-  }
-
-
-  login(): Observable<any> {
-
-    const url: string = `${this.urlPrefix}/login`;
-
+  auth(): Observable<any> {
+    const url: string = `${this.urlPrefix}`;
     return this.http.get<any>(url).pipe(
-      tap(data=> console.log(data)),
-      catchError(this.handleError<any>({}))
+    
     )
   }
 
 
   queryStarred(userName): Observable<StarrdData> {
-    const url = `${this.urlPrefix}/users/${userName}/starred`;
+    const url = `${this.githubUrlPrefix}/users/${userName}/starred`;
     return this.http.get<any>(url).pipe(
-      tap(data=> console.log(data)),
-      catchError(this.handleError<StarrdData>({}))
+      
+    )
+  }
+
+  queryUser(): Observable<User> {
+    const url = `${this.githubUrlPrefix}/user`;
+    return this.http.get<User>(url).pipe(
+     tap(data=>{console.log(data)})
     )
   }
 }

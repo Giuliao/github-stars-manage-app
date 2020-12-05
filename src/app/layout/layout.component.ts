@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '@services/github/github.service';
+import { User } from "@lib/github/starred";
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+
+  public user: User;
+  constructor(private githubService: GithubService) {
+    
+  }
 
   ngOnInit(): void {
+    
   }
 
 }
