@@ -7,13 +7,5 @@ import { GithubService } from "./services/github/github.service";
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'github-stars';
-  constructor(private githubService: GithubService) {}
-
-  onLogin() {
-    this.githubService.login().subscribe(data=>{
-      console.log(data);
-    })
-  }
-
+  constructor() {}
 }
