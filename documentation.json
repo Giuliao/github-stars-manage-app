@@ -1,0 +1,2716 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "PaginatorItem",
+            "id": "interface-PaginatorItem-3cfbe05780545ed7ad9c28ea3889b539",
+            "file": "src/app/services/github/github.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StarrdData {\r\n    fork: boolean;\r\n    forks: number;\r\n    forks_count: number;\r\n    forks_url: string;\r\n    full_name: string;\r\n    tags: Array<any>;\r\n    description?: string;\r\n}\r\n\r\n\r\nexport interface User {\r\n    login: string;\r\n    id: string;\r\n    node_id: string;\r\n    avatar_url: string;\r\n    'gravatar_id': string;\r\n    'url': string;\r\n    'html_url': string;\r\n    'followers_url': string;\r\n    'following_url': string;\r\n    'gists_url': string;\r\n    'starred_url': string;\r\n    'subscriptions_url': string;\r\n    'organizations_url': string;\r\n    'repos_url': string;\r\n    'events_url': string;\r\n    'received_events_url': string;\r\n    'type': string;\r\n    'site_admin': boolean;\r\n    'name': string;\r\n    'company': string;\r\n    'blog': string;\r\n    'location': any;\r\n    'email': any;\r\n    'hireable': any;\r\n    'bio': string;\r\n    'twitter_username': any;\r\n    'public_repos': number;\r\n    'public_gists': number;\r\n    'followers': number;\r\n    'following': number;\r\n    'created_at': string;\r\n    'updated_at': string;\r\n    'private_gists': 0;\r\n    'total_private_repos': number;\r\n    'owned_private_repos': number;\r\n    'disk_usage': number;\r\n    'collaborators': number;\r\n    'two_factor_authentication': boolean;\r\n    'plan': any;\r\n}\r\n\r\n\r\nexport interface PaginatorItem {\r\n    pageIndex?: number;\r\n    pageSize?: number;\r\n    disabled?: boolean;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "disabled",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 63
+                },
+                {
+                    "name": "pageIndex",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 61
+                },
+                {
+                    "name": "pageSize",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 62
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "StarrdData",
+            "id": "interface-StarrdData-3cfbe05780545ed7ad9c28ea3889b539",
+            "file": "src/app/services/github/github.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StarrdData {\r\n    fork: boolean;\r\n    forks: number;\r\n    forks_count: number;\r\n    forks_url: string;\r\n    full_name: string;\r\n    tags: Array<any>;\r\n    description?: string;\r\n}\r\n\r\n\r\nexport interface User {\r\n    login: string;\r\n    id: string;\r\n    node_id: string;\r\n    avatar_url: string;\r\n    'gravatar_id': string;\r\n    'url': string;\r\n    'html_url': string;\r\n    'followers_url': string;\r\n    'following_url': string;\r\n    'gists_url': string;\r\n    'starred_url': string;\r\n    'subscriptions_url': string;\r\n    'organizations_url': string;\r\n    'repos_url': string;\r\n    'events_url': string;\r\n    'received_events_url': string;\r\n    'type': string;\r\n    'site_admin': boolean;\r\n    'name': string;\r\n    'company': string;\r\n    'blog': string;\r\n    'location': any;\r\n    'email': any;\r\n    'hireable': any;\r\n    'bio': string;\r\n    'twitter_username': any;\r\n    'public_repos': number;\r\n    'public_gists': number;\r\n    'followers': number;\r\n    'following': number;\r\n    'created_at': string;\r\n    'updated_at': string;\r\n    'private_gists': 0;\r\n    'total_private_repos': number;\r\n    'owned_private_repos': number;\r\n    'disk_usage': number;\r\n    'collaborators': number;\r\n    'two_factor_authentication': boolean;\r\n    'plan': any;\r\n}\r\n\r\n\r\nexport interface PaginatorItem {\r\n    pageIndex?: number;\r\n    pageSize?: number;\r\n    disabled?: boolean;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "description",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "fork",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "forks",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "forks_count",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "forks_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "full_name",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "tags",
+                    "type": "Array<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-3cfbe05780545ed7ad9c28ea3889b539",
+            "file": "src/app/services/github/github.interface.ts",
+            "type": "interface",
+            "sourceCode": "export interface StarrdData {\r\n    fork: boolean;\r\n    forks: number;\r\n    forks_count: number;\r\n    forks_url: string;\r\n    full_name: string;\r\n    tags: Array<any>;\r\n    description?: string;\r\n}\r\n\r\n\r\nexport interface User {\r\n    login: string;\r\n    id: string;\r\n    node_id: string;\r\n    avatar_url: string;\r\n    'gravatar_id': string;\r\n    'url': string;\r\n    'html_url': string;\r\n    'followers_url': string;\r\n    'following_url': string;\r\n    'gists_url': string;\r\n    'starred_url': string;\r\n    'subscriptions_url': string;\r\n    'organizations_url': string;\r\n    'repos_url': string;\r\n    'events_url': string;\r\n    'received_events_url': string;\r\n    'type': string;\r\n    'site_admin': boolean;\r\n    'name': string;\r\n    'company': string;\r\n    'blog': string;\r\n    'location': any;\r\n    'email': any;\r\n    'hireable': any;\r\n    'bio': string;\r\n    'twitter_username': any;\r\n    'public_repos': number;\r\n    'public_gists': number;\r\n    'followers': number;\r\n    'following': number;\r\n    'created_at': string;\r\n    'updated_at': string;\r\n    'private_gists': 0;\r\n    'total_private_repos': number;\r\n    'owned_private_repos': number;\r\n    'disk_usage': number;\r\n    'collaborators': number;\r\n    'two_factor_authentication': boolean;\r\n    'plan': any;\r\n}\r\n\r\n\r\nexport interface PaginatorItem {\r\n    pageIndex?: number;\r\n    pageSize?: number;\r\n    disabled?: boolean;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "avatar_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "bio",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 42
+                },
+                {
+                    "name": "blog",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "collaborators",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 54
+                },
+                {
+                    "name": "company",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "created_at",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 48
+                },
+                {
+                    "name": "disk_usage",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 53
+                },
+                {
+                    "name": "email",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                },
+                {
+                    "name": "events_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "followers",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 46
+                },
+                {
+                    "name": "followers_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "following",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 47
+                },
+                {
+                    "name": "following_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "gists_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "gravatar_id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "hireable",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 41
+                },
+                {
+                    "name": "html_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "location",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "login",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 36
+                },
+                {
+                    "name": "node_id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "organizations_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "owned_private_repos",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 52
+                },
+                {
+                    "name": "plan",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 56
+                },
+                {
+                    "name": "private_gists",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 50
+                },
+                {
+                    "name": "public_gists",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                },
+                {
+                    "name": "public_repos",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                },
+                {
+                    "name": "received_events_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                },
+                {
+                    "name": "repos_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "site_admin",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
+                    "name": "starred_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "subscriptions_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "total_private_repos",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 51
+                },
+                {
+                    "name": "twitter_username",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 43
+                },
+                {
+                    "name": "two_factor_authentication",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 55
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 34
+                },
+                {
+                    "name": "updated_at",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 49
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "ConstantsService",
+            "id": "injectable-ConstantsService-656e90b7a86d49078c6aa42045a968a6",
+            "file": "src/app/services/constants/constants.service.ts",
+            "properties": [
+                {
+                    "name": "constants",
+                    "defaultValue": "{\r\n    accessTokenStr: 'access_token'\r\n  }",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        112
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "get",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "{ accessTokenStr: string; }",
+                    "typeParameters": [],
+                    "line": 17,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class ConstantsService {\r\n\r\n\r\n  private constants = {\r\n    accessTokenStr: 'access_token'\r\n  };\r\n\r\n  constructor() {\r\n  }\r\n\r\n\r\n  public get() {\r\n    return this.constants;\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 11
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "GithubService",
+            "id": "injectable-GithubService-9331d11ec4a9544661205d84ad5eed3c",
+            "file": "src/app/services/github/github.service.ts",
+            "properties": [
+                {
+                    "name": "githubUrlPrefix",
+                    "defaultValue": "'api/v1/github'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        112
+                    ]
+                },
+                {
+                    "name": "urlPrefix",
+                    "defaultValue": "'api/v1/auth'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "modifierKind": [
+                        112
+                    ]
+                },
+                {
+                    "name": "user$",
+                    "defaultValue": "new BehaviorSubject(null)",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "modifierKind": [
+                        112
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "auth",
+                    "args": [
+                        {
+                            "name": "code",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 28,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "code",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "decodePaginInfo",
+                    "args": [
+                        {
+                            "name": "link",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Record<string, PaginatorItem>",
+                    "typeParameters": [],
+                    "line": 55,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "link",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "decodePaginRel",
+                    "args": [
+                        {
+                            "name": "rel",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 108,
+                    "modifierKind": [
+                        112
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "rel",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "decodePaginUrl",
+                    "args": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "PaginatorItem",
+                    "typeParameters": [],
+                    "line": 90,
+                    "modifierKind": [
+                        112
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "url",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "decodeUserData",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "getDefaultHeaders",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "{ headers: string; }",
+                    "typeParameters": [],
+                    "line": 81,
+                    "modifierKind": [
+                        112
+                    ]
+                },
+                {
+                    "name": "getUser",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<User>",
+                    "typeParameters": [],
+                    "line": 47,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "queryStarred",
+                    "args": [
+                        {
+                            "name": "userName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "params",
+                            "type": "any",
+                            "defaultValue": "{pageIndex: 1, pageSize: 30}"
+                        },
+                        {
+                            "name": "options",
+                            "type": "any",
+                            "defaultValue": "{}"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<Array<StarrdData>>",
+                    "typeParameters": [],
+                    "line": 34,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "userName",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "params",
+                            "type": "any",
+                            "defaultValue": "{pageIndex: 1, pageSize: 30}",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "options",
+                            "type": "any",
+                            "defaultValue": "{}",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "queryUser",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<User>",
+                    "typeParameters": [],
+                    "line": 41,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { Observable, BehaviorSubject } from 'rxjs';\r\nimport { catchError, tap, skip, filter } from 'rxjs/operators';\r\n\r\nimport { StarrdData, User } from './github.interface';\r\nimport { StarHttpService } from '@utils/star-http.service';\r\nimport { CookieService } from 'ngx-cookie-service';\r\nimport { ConstantsService } from '@services/constants/constants.service';\r\nimport { PaginatorItem } from './github.interface';\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class GithubService {\r\n\r\n  private githubUrlPrefix = 'api/v1/github';\r\n  private urlPrefix = 'api/v1/auth';\r\n  private user$ = new BehaviorSubject(null);\r\n\r\n  constructor(\r\n    private http: StarHttpService,\r\n    private cookieService: CookieService,\r\n    private constantService: ConstantsService\r\n  ) { }\r\n\r\n\r\n\r\n\r\n  public auth(code: string): Observable<any> {\r\n    const url = `${this.urlPrefix}?code=${code}`;\r\n    return this.http.get<any>(url);\r\n  }\r\n\r\n\r\n  public queryStarred(userName: string, params: any= {pageIndex: 1, pageSize: 30}, options: any= {}): Observable<Array<StarrdData>> {\r\n    const url = `${this.githubUrlPrefix}/users/${userName}/starred?page=${params.pageIndex}&per_page=${params.pageSize}`;\r\n    return this.http.get<Array<StarrdData>>(url, Object.assign(this.getDefaultHeaders(), options)).pipe(\r\n      filter(data => data != null)\r\n    );\r\n  }\r\n\r\n  public queryUser(): Observable<User> {\r\n    const url = `${this.githubUrlPrefix}/user`;\r\n    return this.http.get<User>(url, this.getDefaultHeaders()).pipe(\r\n     tap(data => {this.user$.next(data); })\r\n    );\r\n  }\r\n  public getUser(): Observable<User> {\r\n    return this.user$.pipe(skip(1));\r\n  }\r\n\r\n  public decodeUserData() {\r\n\r\n  }\r\n\r\n  public decodePaginInfo(link: string): Record<string, PaginatorItem> {\r\n    if (!link) {\r\n      return null;\r\n    }\r\n\r\n    const result: Record<string, PaginatorItem> = {\r\n      next: {\r\n        disabled: true\r\n      },\r\n      last: {\r\n        disabled: true\r\n\r\n      },\r\n      prev: {\r\n        disabled: true\r\n      }\r\n    };\r\n\r\n    link.split(',').forEach(item => {\r\n      const [ url, rel ] = item.split(';');\r\n      result[this.decodePaginRel(rel.trim())] = Object.assign(result[this.decodePaginRel(rel.trim())] || {}, this.decodePaginUrl(url));\r\n    });\r\n\r\n    return result;\r\n  }\r\n\r\n  private getDefaultHeaders() {\r\n    const accessToken = this.cookieService.get(\r\n      this.constantService.get().accessTokenStr\r\n    );\r\n    return {\r\n      headers: `Authorization: bearer ${accessToken}`\r\n    };\r\n  }\r\n\r\n  private decodePaginUrl(url: string): PaginatorItem {\r\n    const result: PaginatorItem = {\r\n      pageIndex: 1,\r\n      pageSize: 30,\r\n      disabled: false\r\n    };\r\n\r\n    const reg = /page=\\d+/g;\r\n    const regResult = url.match(reg);\r\n    if (regResult != null) {\r\n      const [ pageIndexStr, pageSizeStr ] = regResult;\r\n      result.pageIndex = parseInt(pageIndexStr.split('=')[1], 10);\r\n      result.pageSize = parseInt(pageSizeStr.split('=')[1], 10);\r\n    }\r\n\r\n    return result;\r\n  }\r\n\r\n  private decodePaginRel(rel: string): string {\r\n    const reg = /\"([^\"]*)\"/;\r\n    return rel.split('=')[1].match(reg)[1] || '';\r\n  }\r\n\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "StarHttpService"
+                    },
+                    {
+                        "name": "cookieService",
+                        "type": "CookieService"
+                    },
+                    {
+                        "name": "constantService",
+                        "type": "ConstantsService"
+                    }
+                ],
+                "line": 17,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "StarHttpService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "cookieService",
+                        "type": "CookieService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "constantService",
+                        "type": "ConstantsService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "StarHttpService",
+            "id": "injectable-StarHttpService-99c0e785403e02e03461d132116ce722",
+            "file": "src/app/utils/star-http.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "get",
+                    "args": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "options",
+                            "type": "literal type",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<T>",
+                    "typeParameters": [
+                        "T"
+                    ],
+                    "line": 25,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "url",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "options",
+                            "type": "literal type",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "handleError",
+                    "args": [
+                        {
+                            "name": "result",
+                            "type": "T",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "(error: any) => any",
+                    "typeParameters": [
+                        "T"
+                    ],
+                    "line": 14,
+                    "modifierKind": [
+                        112
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "result",
+                            "type": "T",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "head",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "post",
+                    "args": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "body",
+                            "type": "literal type",
+                            "optional": true
+                        },
+                        {
+                            "name": "options",
+                            "type": "literal type",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<T>",
+                    "typeParameters": [
+                        "T"
+                    ],
+                    "line": 32,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "url",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "body",
+                            "type": "literal type",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "options",
+                            "type": "literal type",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "put",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 44,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { HttpClient, HttpHeaders } from '@angular/common/http';\r\nimport { Observable, of } from 'rxjs';\r\nimport { catchError, tap } from 'rxjs/operators';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class StarHttpService {\r\n\r\n  constructor(private http: HttpClient) { }\r\n\r\n\r\n  private handleError<T>(result?: T) {\r\n    return (error: any): Observable<T> => {\r\n\r\n      // TODO: send the error to remote logging infrastructure\r\n      console.error(error); // log to console instead\r\n\r\n      // Let the app keep running by returning an empty result.\r\n      return of(result as T);\r\n    };\r\n  }\r\n\r\n  public get<T>(url: string, options?: {}): Observable<T> {\r\n    return this.http.get<T>(url, options).pipe(\r\n      catchError(this.handleError<T>())\r\n    );\r\n  }\r\n\r\n\r\n  public post<T>(url: string, body?: {}, options?: {}): Observable<T> {\r\n    return this.http.post<T>(url, body, options).pipe(\r\n      catchError(this.handleError<T>())\r\n    );\r\n  }\r\n\r\n\r\n  public head() {\r\n\r\n  }\r\n\r\n\r\n  public put() {\r\n\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient"
+                    }
+                ],
+                "line": 9,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "UserService",
+            "id": "injectable-UserService-714e05c4ac5208f1ea9e704609e3ca17",
+            "file": "src/app/services/user/user.service.ts",
+            "properties": [
+                {
+                    "name": "user",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        112
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getUserInfo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 25
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { GithubService } from '@services/github/github.service';\r\nimport { of, Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class UserService {\r\n\r\n\r\n  private user: any;\r\n\r\n  constructor(\r\n    private githubService: GithubService\r\n  ) {\r\n\r\n\r\n    this.githubService.queryUser().subscribe(\r\n      data => {\r\n        this.user = data;\r\n      }\r\n    );\r\n  }\r\n\r\n  getUserInfo(): Observable<any> {\r\n    if (this.user) {\r\n      return of(this.user);\r\n    }\r\n\r\n    return this.githubService.queryUser();\r\n\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "githubService",
+                        "type": "GithubService"
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "githubService",
+                        "type": "GithubService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        }
+    ],
+    "classes": [
+        {
+            "name": "AppPage",
+            "id": "class-AppPage-a0db91bfa3b9914e9048612074084ee6",
+            "file": "e2e/src/app.po.ts",
+            "type": "class",
+            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl) as Promise<unknown>;\n  }\n\n  getTitleText(): Promise<string> {\n    return element(by.css('app-root .content span')).getText() as Promise<string>;\n  }\n}\n",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getTitleText",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<string>",
+                    "typeParameters": [],
+                    "line": 8
+                },
+                {
+                    "name": "navigateTo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<unknown>",
+                    "typeParameters": [],
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-4c019986c9298ab8d56dbb2b1ed80f7c",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.less']\r\n})\r\nexport class AppComponent {\r\n  constructor() {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 8
+            },
+            "templateData": "\n\n<app-layout>\n  <router-outlet></router-outlet>\n</app-layout>\n"
+        },
+        {
+            "name": "AuthComponent",
+            "id": "component-AuthComponent-de0bcf947af2bdbef8f87f24b7e54910",
+            "file": "src/app/pages/auth/auth.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-auth",
+            "styleUrls": [
+                "./auth.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./auth.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport { GithubService } from '@services/github/github.service';\r\nimport { ActivatedRoute, Router } from '@angular/router';\r\nimport { CookieService } from 'ngx-cookie-service';\r\nimport { ConstantsService } from '@services/constants/constants.service';\r\n\r\n@Component({\r\n  selector: 'app-auth',\r\n  templateUrl: './auth.component.html',\r\n  styleUrls: ['./auth.component.less']\r\n})\r\nexport class AuthComponent implements OnInit {\r\n\r\n  constructor(\r\n    private githubService: GithubService,\r\n    private route: ActivatedRoute,\r\n    private router: Router,\r\n    private cookieService: CookieService,\r\n    private constantService: ConstantsService\r\n    ) { }\r\n\r\n  ngOnInit(): void {\r\n    this.route.queryParams.subscribe(params => {\r\n      const code = params.code ?? '';\r\n      if (!code) {\r\n        this.router.navigate(['/']);\r\n      }\r\n\r\n      this.githubService.auth(code).subscribe(data => {\r\n        if (!data) {\r\n          return;\r\n        }\r\n        this.cookieService.set(this.constantService.get().accessTokenStr, data.access_token);\r\n        this.router.navigate(['/']);\r\n      });\r\n    });\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./auth.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "githubService",
+                        "type": "GithubService"
+                    },
+                    {
+                        "name": "route",
+                        "type": "ActivatedRoute"
+                    },
+                    {
+                        "name": "router",
+                        "type": "Router"
+                    },
+                    {
+                        "name": "cookieService",
+                        "type": "CookieService"
+                    },
+                    {
+                        "name": "constantService",
+                        "type": "ConstantsService"
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "githubService",
+                        "type": "GithubService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "route",
+                        "type": "ActivatedRoute",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "cookieService",
+                        "type": "CookieService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "constantService",
+                        "type": "ConstantsService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "\n"
+        },
+        {
+            "name": "BackToTopComponent",
+            "id": "component-BackToTopComponent-99dcc3c6243374e76fcd2ac1a77151af",
+            "file": "src/app/shared/components/back-to-top/back-to-top.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-back-to-top",
+            "styleUrls": [
+                "./back-to-top.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./back-to-top.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "pageOffset",
+                    "defaultValue": "0",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 26
+                },
+                {
+                    "name": "onClick",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scrollToTop",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 34,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [
+                {
+                    "name": "window:scroll",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any"
+                        }
+                    ],
+                    "argsDecorator": [
+                        "$event"
+                    ],
+                    "line": 18
+                }
+            ],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, HostListener } from '@angular/core';\r\nimport { ViewportScroller } from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'app-back-to-top',\r\n  templateUrl: './back-to-top.component.html',\r\n  styleUrls: ['./back-to-top.component.less']\r\n})\r\nexport class BackToTopComponent implements OnInit {\r\n\r\n  public pageOffset = 0;\r\n  constructor(\r\n    private scroll: ViewportScroller\r\n  ) { }\r\n\r\n\r\n  @HostListener('window:scroll', ['$event'])\r\n  public onScroll(event: any): void {\r\n    this.pageOffset = window.pageYOffset;\r\n  }\r\n\r\n\r\n\r\n\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  public onClick(event: any): void {\r\n    window.scroll(0, 0);\r\n  }\r\n\r\n\r\n  public scrollToTop(): void {\r\n    this.scroll.scrollToPosition([0, 0]);\r\n  }\r\n\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".back-to-top {\r\n  position: fixed;\r\n  z-index: 9999;\r\n  right: 10px;\r\n  bottom: 10px;\r\n}\r\n",
+                    "styleUrl": "./back-to-top.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "scroll",
+                        "type": "ViewportScroller"
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "scroll",
+                        "type": "ViewportScroller",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"back-to-top\" (click)=\"scrollToTop()\" *ngIf=\"pageOffset > 0\">\r\n   <button mat-fab color=\"accent\">\r\n       <mat-icon>arrow_upward</mat-icon>\r\n   </button>\r\n</div>\r\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-642c6c4e474cd5a0ac760dfda26b2fc9",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string"
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "ContentComponent",
+            "id": "component-ContentComponent-41d614681c0dca0aefb782f844806e33",
+            "file": "src/app/pages/content/content.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-content",
+            "styleUrls": [
+                "./content.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./content.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "dataList",
+                    "defaultValue": "[]",
+                    "type": "StarrdData[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "loading",
+                    "defaultValue": "true",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "paginOption",
+                    "defaultValue": "{\r\n    prevOption: {\r\n      pageIndex: 0,\r\n      pageSize: 30,\r\n      disabled: false,\r\n    } as PaginatorItem,\r\n    nextOption: {\r\n      pageIndex: 0,\r\n      pageSize: 30,\r\n      disabled: false\r\n    } as PaginatorItem\r\n  }",
+                    "type": "object",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "userInfo",
+                    "type": "User",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "modifierKind": [
+                        112
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "drop",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "CdkDragDrop<Array<string>>"
+                        },
+                        {
+                            "name": "item",
+                            "type": "StarrdData"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 47,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "CdkDragDrop<Array<string>>",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "item",
+                            "type": "StarrdData",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 43
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 36
+                },
+                {
+                    "name": "onNext",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 54,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "onPrev",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 59,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "onUnstar",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "queryStarredList",
+                    "args": [
+                        {
+                            "name": "params",
+                            "type": "any",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 67,
+                    "modifierKind": [
+                        112
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "params",
+                            "type": "any",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "scrollToTop",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 63,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, OnDestroy } from '@angular/core';\r\nimport { ViewportScroller } from '@angular/common';\r\nimport { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';\r\n\r\nimport { GithubService } from '@services/github/github.service';\r\nimport { User, StarrdData, PaginatorItem } from '@services/github/github.interface';\r\n\r\n@Component({\r\n  selector: 'app-content',\r\n  templateUrl: './content.component.html',\r\n  styleUrls: ['./content.component.less']\r\n})\r\nexport class ContentComponent implements OnInit, OnDestroy {\r\n\r\n  public loading = true;\r\n  public dataList: StarrdData[] = [];\r\n  public paginOption = {\r\n    prevOption: {\r\n      pageIndex: 0,\r\n      pageSize: 30,\r\n      disabled: false,\r\n    } as PaginatorItem,\r\n    nextOption: {\r\n      pageIndex: 0,\r\n      pageSize: 30,\r\n      disabled: false\r\n    } as PaginatorItem\r\n  };\r\n  private userInfo: User;\r\n\r\n  constructor(\r\n    private githubService: GithubService,\r\n    private scroll: ViewportScroller\r\n  ) { }\r\n\r\n  ngOnInit(): void {\r\n    this.githubService.getUser().subscribe((user: User) => {\r\n      this.userInfo = user;\r\n      this.queryStarredList();\r\n    });\r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n\r\n  }\r\n\r\n  public drop(event: CdkDragDrop<Array<string> >, item: StarrdData): void {\r\n    moveItemInArray(item.tags, event.previousIndex, event.currentIndex);\r\n  }\r\n\r\n  public onUnstar(): void {\r\n    console.log('cancal stars');\r\n  }\r\n  public onNext(): void {\r\n    this.queryStarredList(this.paginOption.nextOption);\r\n\r\n  }\r\n\r\n  public onPrev(): void{\r\n    this.queryStarredList(this.paginOption.prevOption);\r\n  }\r\n\r\n  public scrollToTop(): void {\r\n    this.scroll.scrollToPosition([0, 0]);\r\n  }\r\n\r\n  private queryStarredList(params?: any): void {\r\n    this.loading = true;\r\n    this.githubService.queryStarred(this.userInfo.name, params, {observe: 'response'}).subscribe(\r\n      (resp: any) => {\r\n      this.scrollToTop();\r\n      const paginInfo = this.githubService.decodePaginInfo(resp.headers.get('link'));\r\n      this.paginOption.prevOption = paginInfo.prev || {};\r\n      this.paginOption.nextOption = paginInfo.next || {};\r\n\r\n      this.dataList = resp?.body || [];\r\n      this.loading = false;\r\n    },\r\n    err => {\r\n      this.loading = false;\r\n    });\r\n  }\r\n\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".card-box {\r\n  margin-bottom: 20px;\r\n  max-width: 600px;\r\n}\r\n\r\n.tag-box {\r\n  padding: 10px;\r\n}\r\n\r\n.action-box {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n}\r\n",
+                    "styleUrl": "./content.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "githubService",
+                        "type": "GithubService"
+                    },
+                    {
+                        "name": "scroll",
+                        "type": "ViewportScroller"
+                    }
+                ],
+                "line": 29,
+                "jsdoctags": [
+                    {
+                        "name": "githubService",
+                        "type": "GithubService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "scroll",
+                        "type": "ViewportScroller",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit",
+                "OnDestroy"
+            ],
+            "templateData": "\r\n<section>\r\n    <app-loading-widget *ngIf=\"loading\"></app-loading-widget>\r\n    <mat-card *ngFor=\"let item of dataList\" class=\"card-box\">\r\n        <mat-card-header>{{item.full_name}}</mat-card-header>\r\n        <div class=\"tag-box\">\r\n            <mat-chip-list\r\n                cdkDropList\r\n                cdkDropListOrientation=\"horizontal\"\r\n                (cdkDropListDropped)=\"drop($event, item)\">\r\n                <mat-chip cdkDrag *ngFor=\"let tag of item.tags\">\r\n                    {{tag}}        \r\n                </mat-chip>\r\n            </mat-chip-list>\r\n        </div>\r\n        <mat-card-content><p>{{item.description}}</p></mat-card-content>    \r\n        <mat-card-actions class=\"action-box\">\r\n            <button mat-raised-button (click)=\"onUnstar()\">Unstar</button>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n    <app-github-paginator \r\n        *ngIf=\"dataList.length > 0\" \r\n        (prev)=\"onPrev()\" (next)=\"onNext()\"\r\n        [disabledPrev]=\"paginOption.prevOption.disabled\"\r\n        [disabledNext]=\"paginOption.nextOption.disabled\"\r\n    >\r\n    </app-github-paginator>\r\n    <app-back-to-top></app-back-to-top>\r\n</section>\r\n"
+        },
+        {
+            "name": "GithubPaginatorComponent",
+            "id": "component-GithubPaginatorComponent-6c843abd3d6017530ad61efd82bcef07",
+            "file": "src/app/shared/components/github-paginator/github-paginator.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-github-paginator",
+            "styleUrls": [
+                "./github-paginator.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./github-paginator.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "disabledNext",
+                    "defaultValue": "false",
+                    "line": 10
+                },
+                {
+                    "name": "disabledPrev",
+                    "defaultValue": "false",
+                    "line": 11
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "next",
+                    "defaultValue": "new EventEmitter()",
+                    "line": 12,
+                    "type": "EventEmitter<any>"
+                },
+                {
+                    "name": "prev",
+                    "defaultValue": "new EventEmitter()",
+                    "line": 13,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16
+                },
+                {
+                    "name": "onNext",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "onPrev",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-github-paginator',\r\n  templateUrl: './github-paginator.component.html',\r\n  styleUrls: ['./github-paginator.component.less']\r\n})\r\nexport class GithubPaginatorComponent implements OnInit {\r\n\r\n  @Input() disabledNext = false;\r\n  @Input() disabledPrev = false;\r\n  @Output() next: EventEmitter<any> = new EventEmitter();\r\n  @Output() prev: EventEmitter<any> = new EventEmitter();\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  public onPrev(): void {\r\n    this.prev.emit(null);\r\n  }\r\n\r\n\r\n  public onNext(): void {\r\n    this.next.emit(null);\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".paginator-container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n}\r\n",
+                    "styleUrl": "./github-paginator.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"paginator-container\">\r\n    <button mat-raised-button style=\"margin-right: 10px;\" (click)=\"onPrev()\" [disabled]=\"disabledPrev\"> <mat-icon>keyboard_arrow_left</mat-icon> </button>\r\n    <button mat-raised-button (click)=\"onNext()\" [disabled]=\"disabledNext\"> <mat-icon>keyboard_arrow_right</mat-icon> </button>\r\n</div>\r\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-246e2a69dc126a3bd76c6328dd3b93e2",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "line": 53,
+                    "type": "unknown"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 62,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 56,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 59,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "LayoutComponent",
+            "id": "component-LayoutComponent-71e950e212101e68cabf0aa06c11e01f",
+            "file": "src/app/layout/layout.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-layout",
+            "styleUrls": [
+                "./layout.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./layout.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport { UserService } from '@services/user/user.service';\r\n\r\n@Component({\r\n  selector: 'app-layout',\r\n  templateUrl: './layout.component.html',\r\n  styleUrls: ['./layout.component.less']\r\n})\r\nexport class LayoutComponent implements OnInit {\r\n\r\n\r\n  public user: any;\r\n  constructor(private userService: UserService) {}\r\n\r\n  ngOnInit(): void {\r\n    this.user = this.userService.getUserInfo().subscribe(data => {\r\n      this.user = data;\r\n    });\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host {\r\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica,\r\n    Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\r\n  font-size: 14px;\r\n  color: #333;\r\n  box-sizing: border-box;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  margin: 8px 0;\r\n}\r\n\r\np {\r\n  margin: 0;\r\n}\r\n\r\n.spacer {\r\n  flex: 1;\r\n}\r\n\r\n.toolbar {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 60px;\r\n  display: flex;\r\n  align-items: center;\r\n  background-color: #1976d2;\r\n  color: white;\r\n  font-weight: 600;\r\n}\r\n\r\n.toolbar img {\r\n  margin: 0 16px;\r\n}\r\n\r\n.toolbar #twitter-logo {\r\n  height: 40px;\r\n  margin: 0 16px;\r\n}\r\n\r\n.toolbar #twitter-logo:hover {\r\n  opacity: 0.8;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  margin: 82px auto 32px;\r\n  padding: 0 16px;\r\n  max-width: 960px;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\nsvg.material-icons {\r\n  height: 24px;\r\n  width: auto;\r\n}\r\n\r\nsvg.material-icons:not(:last-child) {\r\n  margin-right: 8px;\r\n}\r\n\r\n.card svg.material-icons path {\r\n  fill: #888;\r\n}\r\n\r\n.card-container {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.card {\r\n  border-radius: 4px;\r\n  border: 1px solid #eee;\r\n  background-color: #fafafa;\r\n  height: 40px;\r\n  width: 200px;\r\n  margin: 0 8px 16px;\r\n  padding: 16px;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: all 0.2s ease-in-out;\r\n  line-height: 24px;\r\n}\r\n\r\n.card-container .card:not(:last-child) {\r\n  margin-right: 0;\r\n}\r\n\r\n.card.card-small {\r\n  height: 16px;\r\n  width: 168px;\r\n}\r\n\r\n.card-container .card:not(.highlight-card) {\r\n  cursor: pointer;\r\n}\r\n\r\n.card-container .card:not(.highlight-card):hover {\r\n  transform: translateY(-3px);\r\n  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);\r\n}\r\n\r\n.card-container .card:not(.highlight-card):hover .material-icons path {\r\n  fill: rgb(105, 103, 103);\r\n}\r\n\r\n.card.highlight-card {\r\n  background-color: #1976d2;\r\n  color: white;\r\n  font-weight: 600;\r\n  border: none;\r\n  width: auto;\r\n  min-width: 30%;\r\n  position: relative;\r\n}\r\n\r\n.card.card.highlight-card span {\r\n  margin-left: 60px;\r\n}\r\n\r\nsvg#rocket {\r\n  width: 80px;\r\n  position: absolute;\r\n  left: -10px;\r\n  top: -24px;\r\n}\r\n\r\nsvg#rocket-smoke {\r\n  height: calc(100vh - 95px);\r\n  position: absolute;\r\n  top: 10px;\r\n  right: 180px;\r\n  z-index: -10;\r\n}\r\n\r\na,\r\na:visited,\r\na:hover {\r\n  color: #1976d2;\r\n  text-decoration: none;\r\n}\r\n\r\na:hover {\r\n  color: #125699;\r\n}\r\n\r\n.terminal {\r\n  position: relative;\r\n  width: 80%;\r\n  max-width: 600px;\r\n  border-radius: 6px;\r\n  padding-top: 45px;\r\n  margin-top: 8px;\r\n  overflow: hidden;\r\n  background-color: rgb(15, 15, 16);\r\n}\r\n\r\n.terminal::before {\r\n  content: \"\\2022 \\2022 \\2022\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  height: 4px;\r\n  background: rgb(58, 58, 58);\r\n  color: #c2c3c4;\r\n  width: 100%;\r\n  font-size: 2rem;\r\n  line-height: 0;\r\n  padding: 14px 0;\r\n  text-indent: 4px;\r\n}\r\n\r\n.terminal pre {\r\n  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;\r\n  color: white;\r\n  padding: 0 1rem 1rem;\r\n  margin: 0;\r\n}\r\n\r\n.circle-link {\r\n  height: 40px;\r\n  width: 40px;\r\n  border-radius: 40px;\r\n  margin: 8px;\r\n  background-color: white;\r\n  border: 1px solid #eeeeee;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  cursor: pointer;\r\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\r\n  transition: 1s ease-out;\r\n}\r\n\r\n.circle-link:hover {\r\n  transform: translateY(-0.25rem);\r\n  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\nfooter {\r\n  margin-top: 8px;\r\n  display: flex;\r\n  align-items: center;\r\n  line-height: 20px;\r\n}\r\n\r\nfooter a {\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.github-star-badge {\r\n  color: #24292e;\r\n  display: flex;\r\n  align-items: center;\r\n  font-size: 12px;\r\n  padding: 3px 10px;\r\n  border: 1px solid rgba(27, 31, 35, 0.2);\r\n  border-radius: 3px;\r\n  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);\r\n  margin-left: 4px;\r\n  font-weight: 600;\r\n  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,\r\n    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;\r\n}\r\n\r\n.github-star-badge:hover {\r\n  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);\r\n  border-color: rgba(27, 31, 35, 0.35);\r\n  background-position: -0.5em;\r\n}\r\n\r\n.github-star-badge .material-icons {\r\n  height: 16px;\r\n  width: 16px;\r\n  margin-right: 4px;\r\n}\r\n\r\nsvg#clouds {\r\n  position: fixed;\r\n  bottom: -160px;\r\n  left: -230px;\r\n  z-index: -10;\r\n  width: 1920px;\r\n}\r\n\r\n/* Responsive Styles */\r\n@media screen and (max-width: 767px) {\r\n  .card-container > *:not(.circle-link),\r\n  .terminal {\r\n    width: 100%;\r\n  }\r\n\r\n  .card:not(.highlight-card) {\r\n    height: 16px;\r\n    margin: 8px 0;\r\n  }\r\n\r\n  .card.highlight-card span {\r\n    margin-left: 72px;\r\n  }\r\n\r\n  svg#rocket-smoke {\r\n    right: 120px;\r\n    transform: rotate(-5deg);\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 575px) {\r\n  svg#rocket-smoke {\r\n    display: none;\r\n    visibility: hidden;\r\n  }\r\n}\r\n",
+                    "styleUrl": "./layout.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "userService",
+                        "type": "UserService"
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "userService",
+                        "type": "UserService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<!-- Toolbar -->\r\n<div class=\"toolbar\" role=\"banner\">\r\n<img\r\n    width=\"40\"\r\n    alt=\"Angular Logo\"\r\n    src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"\r\n/>\r\n<span>Welcome</span>\r\n    <div class=\"spacer\"></div>\r\n    <a *ngIf=\"!user\" style=\"color: white;margin-right: 20px;\" href=\"https://github.com/login/oauth/authorize?client_id=aefac7723ce0d3ba989b&scope=user&redirect_uri=http://localhost:4200/auth\">登录</a>\r\n    <span>{{user.name}}</span><img mat-card-image [src]=\"user.avatar_url\" alt=\"\" *ngIf=\"user\" style=\"flex:0\">\r\n</div>\r\n  \r\n<div class=\"content\" role=\"main\">\r\n\r\n   <ng-content></ng-content>\r\n  \r\n    <!-- Footer -->\r\n    <footer></footer>\r\n  \r\n    <svg id=\"clouds\" alt=\"Gray Clouds Background\" xmlns=\"http://www.w3.org/2000/svg\" width=\"2611.084\" height=\"485.677\" viewBox=\"0 0 2611.084 485.677\">\r\n      <path id=\"Path_39\" data-name=\"Path 39\" d=\"M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z\" transform=\"translate(142.69 -634.312)\" fill=\"#eee\"/>\r\n    </svg>\r\n</div>\r\n"
+        },
+        {
+            "name": "LoadingWidgetComponent",
+            "id": "component-LoadingWidgetComponent-3994a093931f63514a959db8b2dc2028",
+            "file": "src/app/shared/components/loading-widget/loading-widget.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-loading-widget",
+            "styleUrls": [
+                "./loading-widget.component.less"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./loading-widget.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-loading-widget',\r\n  templateUrl: './loading-widget.component.html',\r\n  styleUrls: ['./loading-widget.component.less']\r\n})\r\nexport class LoadingWidgetComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".loading-container {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  min-width: 600px;\r\n  min-height: 600px;\r\n}\r\n",
+                    "styleUrl": "./loading-widget.component.less"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"loading-container\">\r\n    <mat-spinner></mat-spinner>\r\n</div>\r\n\r\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-cca1a8911321fa17756ce90c90de65cc",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "line": 66,
+                    "type": "unknown"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 75,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 69,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 72,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nh2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\np {\n  margin: 1em 0;\n}\n\na {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nli {\n  margin-bottom: 8px;\n}\n\n.tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "AuthComponent"
+                        },
+                        {
+                            "name": "ContentComponent"
+                        },
+                        {
+                            "name": "LayoutComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "SharedModule"
+                        },
+                        {
+                            "name": "UtilsModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SharedModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "BackToTopComponent"
+                        },
+                        {
+                            "name": "GithubPaginatorComponent"
+                        },
+                        {
+                            "name": "LoadingWidgetComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "BackToTopComponent"
+                        },
+                        {
+                            "name": "GithubPaginatorComponent"
+                        },
+                        {
+                            "name": "LoadingWidgetComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UtilsModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "",
+                        "component": "ContentComponent"
+                    },
+                    {
+                        "path": "auth",
+                        "component": "AuthComponent"
+                    },
+                    {
+                        "path": "**",
+                        "redirectTo": ""
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "e2e/src/app.po.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "AppPage",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/layout/layout.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LayoutComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/auth/auth.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AuthComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/content/content.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ContentComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/14",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/constants/constants.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "ConstantsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/github/github.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "PaginatorItem",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/github/github.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "StarrdData",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/github/github.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/40",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/github/github.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "GithubService",
+                "coveragePercent": 0,
+                "coverageCount": "0/14",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/user/user.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UserService",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/back-to-top/back-to-top.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BackToTopComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/github-paginator/github-paginator.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GithubPaginatorComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/loading-widget/loading-widget.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LoadingWidgetComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/utils/star-http.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "StarHttpService",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
