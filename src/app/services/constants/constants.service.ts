@@ -7,10 +7,10 @@ export class ConstantsService {
 
 
   private constants = {
-    accessTokenStr: "access_token"
-  }
+    accessTokenStr: 'access_token'
+  };
 
-  constructor() { 
+  constructor() {
   }
 
 
