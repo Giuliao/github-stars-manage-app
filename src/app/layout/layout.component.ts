@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from "@lib/github/starred";
-import { UserService } from '@services/user/user.service'
+import { UserService } from '@services/user/user.service';
 
 @Component({
   selector: 'app-layout',
@@ -11,12 +10,10 @@ export class LayoutComponent implements OnInit {
 
 
   public user: any;
-  constructor(private userService: UserService) {
-    
-  }
+  constructor(private userService: UserService) {}
 
   ngOnInit(): void {
-    this.user = this.userService.getUserInfo().subscribe(data=>{
+    this.user = this.userService.getUserInfo().subscribe(data => {
       this.user = data;
     });
   }

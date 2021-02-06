@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Observable, of } from "rxjs";
-import { catchError, tap } from "rxjs/operators"
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
+import { catchError, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -22,19 +22,17 @@ export class StarHttpService {
     };
   }
 
-  public get<T>(url: string, options ?: {}): Observable<T> {
+  public get<T>(url: string, options?: {}): Observable<T> {
     return this.http.get<T>(url, options).pipe(
-      tap(data=> console.log(data)),
       catchError(this.handleError<T>())
-    )
+    );
   }
 
 
-  public post<T>(url: string, body ?:{}, options ?: {}): Observable<T> {
-    return this.http.post<T>(url,body, options).pipe(
-      tap(data=> console.log(data)),
+  public post<T>(url: string, body?: {}, options?: {}): Observable<T> {
+    return this.http.post<T>(url, body, options).pipe(
       catchError(this.handleError<T>())
-    )
+    );
   }
 
 
