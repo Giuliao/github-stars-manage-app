@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "github-stars"
+  "defaultProject": "github-stars",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,29 +1,47 @@
 
-<section>
-    <app-loading-widget *ngIf="loading"></app-loading-widget>
-    <mat-card *ngFor="let item of dataList" class="card-box">
-        <mat-card-header>{{item.full_name}}</mat-card-header>
-        <div class="tag-box">
-            <mat-chip-list
-                cdkDropList
-                cdkDropListOrientation="horizontal"
-                (cdkDropListDropped)="drop($event, item)">
-                <mat-chip cdkDrag *ngFor="let tag of item.tags">
-                    {{tag}}        
-                </mat-chip>
-            </mat-chip-list>
-        </div>
-        <mat-card-content><p>{{item.description}}</p></mat-card-content>    
-        <mat-card-actions class="action-box">
-            <button mat-raised-button (click)="onUnstar()">Unstar</button>
-        </mat-card-actions>
-    </mat-card>
-    <app-github-paginator 
-        *ngIf="dataList.length > 0" 
-        (prev)="onPrev()" (next)="onNext()"
-        [disabledPrev]="paginOption.prevOption.disabled"
-        [disabledNext]="paginOption.nextOption.disabled"
-    >
-    </app-github-paginator>
-    <app-back-to-top></app-back-to-top>
-</section>
+<app-tag-list class="tag-card-container"></app-tag-list>
+<div class="content-container">
+    <div class="star-card-container">
+        <mat-card *ngFor="let item of dataList" class="card-box">
+            <mat-card-header>
+                <mat-card-title>{{item.full_name}}</mat-card-title>
+            </mat-card-header>
+            <div class="tag-box">
+            <mat-form-field style="width: 100%;">
+                <mat-label>tags</mat-label>
+                <mat-chip-list
+                    #chipList
+                    cdkDropList
+                    cdkDropListOrientation="horizontal"
+                    (cdkDropListDropped)="drop($event, item)">
+                    <mat-chip cdkDrag *ngFor="let tag of item.tags" [selectable]="true"
+                    [removable]="true" (removed)="onRemove(tag, item)">
+                        {{tag.name}} 
+                        <mat-icon matChipRemove>cancel</mat-icon>       
+                    </mat-chip> 
+                    <input
+                        placeholder="New tags..."
+                        [matChipInputFor]="chipList"
+                        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                        [matChipInputAddOnBlur]="true"
+                        (matChipInputTokenEnd)="onAdd($event, item)">
+                </mat-chip-list>
+            </mat-form-field>
+            </div>
+            <mat-card-content><p>{{item.description}}</p></mat-card-content>    
+            <mat-card-actions class="action-box">
+                <button mat-raised-button (click)="onUnstar()">Unstar</button>
+            </mat-card-actions>
+        </mat-card>
+        <app-github-paginator 
+            *ngIf="dataList.length > 0" 
+            (prev)="onPrev()" (next)="onNext()"
+            [disabledPrev]="paginOption.prevOption.disabled"
+            [disabledNext]="paginOption.nextOption.disabled"
+        >
+        </app-github-paginator>
+    </div>
+</div>
+
+<app-loading-widget *ngIf="loading"></app-loading-widget>
+<app-back-to-top></app-back-to-top>

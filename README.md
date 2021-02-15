@@ -1,6 +1,8 @@
 # GithubStars
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+给 github 个人 star 添加标签
+
+![image](https://user-images.githubusercontent.com/8806896/107962476-f8f40b00-6fe1-11eb-9fc8-7791ccf14952.png)
 
 ## Development server
 
