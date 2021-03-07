@@ -14,7 +14,7 @@
 - [x] 开发自有api server：实现oauth2授权
 - [x] nginx转发 
 - [ ] 容器化部署
-- [ ] [功能特性](https://github.com/Giuliao/github-stars-manage-app/projects/1)
+- [ ] [特性路标](https://github.com/Giuliao/github-stars-manage-app/projects/1)
 
 
 # 临时架构
