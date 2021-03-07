@@ -24,7 +24,3 @@
 
 - 后端代码库地址：https://github.com/Giuliao/github-stars-manage-app-backend
 
-
-```
-
-```
